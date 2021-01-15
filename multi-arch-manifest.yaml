@@ -1,15 +1,15 @@
-image: bartim/mediawiki-docker:latest
+image: bartim/mediawiki:latest
 manifests:
-  - image: bartim/mediawiki-docker:amd64
+  - image: bartim/mediawiki:amd64
     platform:
       architecture: amd64
       os: linux
-  - image: bartim/mediawiki-docker:arm32v7
+  - image: bartim/mediawiki:arm32v7
     platform:
       architecture: arm
       os: linux
       variant: v7
-  - image: bartim/mediawiki-docker:arm64v8
+  - image: bartim/mediawiki:arm64v8
     platform:
       architecture: arm64
       os: linux

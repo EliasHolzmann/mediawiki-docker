@@ -1,0 +1,13 @@
+diff --git a/includes/libs/mime/MimeMap.php b/includes/libs/mime/MimeMap.php
+index 780e6ef..7fadf6a 100644
+--- a/includes/libs/mime/MimeMap.php
++++ b/includes/libs/mime/MimeMap.php
+@@ -133,7 +133,7 @@ class MimeMap {
+                'application/xml' => [ 'xml', 'xsl', 'xsd', 'kml' ],
+                'application/xml-dtd' => [ 'dtd' ],
+                'application/zip' =>
+-                       [ 'zip', 'jar', 'xpi', 'sxc', 'stc', 'sxd', 'std', 'sxi', 'sti', 'sxm', 'stm', 'sxw', 'stw' ],
++                       [ 'zip', 'jar', 'xpi', 'sxc', 'stc', 'sxd', 'std', 'sxi', 'sti', 'sxm', 'stm', 'sxw', 'stw', 'docx', 'docm', 'pptx', 'pptm', 'xlsx', 'xlsm' ],
+                'application/x-rar' => [ 'rar' ],
+                'application/font-sfnt' => [ 'ttf' ],
+                'application/font-woff' => [ 'woff' ],

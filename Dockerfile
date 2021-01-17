@@ -1,6 +1,10 @@
 FROM mediawiki:1.35
 
-RUN docker-php-ext-install bcmath && \
+COPY docx_upload.patch .
+
+RUN patch -p1 docx_upload.patch && \
+    \
+    docker-php-ext-install bcmath && \
     \
     apt-get update && \
     apt-get install -y ghostscript poppler-utils xpdf-utils && \

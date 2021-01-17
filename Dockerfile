@@ -2,7 +2,7 @@ FROM mediawiki:1.35
 
 COPY docx_upload.patch .
 
-RUN patch -p1 docx_upload.patch && \
+RUN patch -p1 <docx_upload.patch && \
     \
     docker-php-ext-install bcmath && \
     \

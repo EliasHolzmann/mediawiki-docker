@@ -1,6 +1,7 @@
 FROM mediawiki:1.35
 
 COPY docx_upload.patch .
+COPY php.ini /usr/local/etc/php/conf.d/uploads.ini
 
 RUN patch -p1 <docx_upload.patch && \
     \

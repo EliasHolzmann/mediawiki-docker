@@ -20,10 +20,10 @@ RUN patch -p1 <docx_upload.patch && \
     rm -rf ./PageForms/.git && \
     \
     git clone --depth=1 --branch=REL1_35 https://gerrit.wikimedia.org/r/mediawiki/extensions/UploadWizard.git && \
-    rm -rf ./UploadWizard/.git
+    rm -rf ./UploadWizard/.git && \
     \
-    git clone --depth=1 --branch=REL1_35 https://github.com/ProfessionalWiki/SimpleBatchUpload.git && \
-    rm -rf ./SimpleBatchUpload/.git
+    git clone --depth=1 --branch=1.6.0 https://github.com/ProfessionalWiki/SimpleBatchUpload.git && \
+    rm -rf ./SimpleBatchUpload/.git && \
     \
     git clone --depth=1 --branch=REL1_35 https://gerrit.wikimedia.org/r/mediawiki/extensions/intersection.git && \
     rm -rf ./intersection/.git

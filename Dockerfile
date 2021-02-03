@@ -26,4 +26,7 @@ RUN patch -p1 <docx_upload.patch && \
     rm -rf ./SimpleBatchUpload/.git && \
     \
     git clone --depth=1 --branch=REL1_35 https://gerrit.wikimedia.org/r/mediawiki/extensions/intersection.git && \
-    rm -rf ./intersection/.git
+    rm -rf ./intersection/.git && \
+    \
+    git clone --depth=1 --branch=REL1_35 https://gerrit.wikimedia.org/r/mediawiki/extensions/ContributionScores.git && \
+    rm -rf ./ContributionScores/.git

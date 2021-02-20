@@ -1,6 +1,7 @@
 FROM mediawiki:1.35
 
 COPY docx_upload.patch .
+COPY simple_batch_upload_for_1_35.patch .
 COPY php.ini /usr/local/etc/php/conf.d/uploads.ini
 
 RUN patch -p1 <docx_upload.patch && \
@@ -23,6 +24,9 @@ RUN patch -p1 <docx_upload.patch && \
     rm -rf ./UploadWizard/.git && \
     \
     git clone --depth=1 --branch=1.6.0 https://github.com/ProfessionalWiki/SimpleBatchUpload.git && \
+    cd SimpleBatchUpload && \
+    git apply ../../simple_batch_upload_for_1_35.patch && \
+    cd .. && \
     rm -rf ./SimpleBatchUpload/.git && \
     \
     git clone --depth=1 --branch=REL1_35 https://gerrit.wikimedia.org/r/mediawiki/extensions/intersection.git && \

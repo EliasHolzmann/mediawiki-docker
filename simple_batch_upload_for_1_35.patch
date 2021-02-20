@@ -1,0 +1,13 @@
+diff --git a/src/SimpleBatchUpload.php b/src/SimpleBatchUpload.php
+index cbb59d8..483cab3 100644
+--- a/src/SimpleBatchUpload.php
++++ b/src/SimpleBatchUpload.php
+@@ -105,7 +105,7 @@ class SimpleBatchUpload {
+ 				'scripts' => [ 'res/jquery.fileupload.js' ],
+ 				'styles' => [ 'res/jquery.fileupload.css' ],
+ 				'position' => 'top',
+-				'dependencies' => [ 'jquery.ui.widget' ],
++				'dependencies' => [ 'jquery.ui' ],
+ 			],
+ 		];
+ 	}

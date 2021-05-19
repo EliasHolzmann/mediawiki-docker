@@ -36,4 +36,7 @@ RUN patch -p1 <docx_upload.patch && \
     rm -rf ./ContributionScores/.git && \
     \
     git clone --depth=1 https://github.com/sigbertklinke/Iframe.git && \
-    rm -rf ./Iframe/.git
+    rm -rf ./Iframe/.git && \
+    \
+    git clone --depth=1 --branch=v2.9.0 https://gitlab.com/hydrawiki/extensions/EmbedVideo.git && \
+    rm -rf ./EmbedVideo/.git

@@ -1,4 +1,4 @@
-FROM mediawiki:1.35.2
+FROM mediawiki:1.35.3
 
 COPY docx_upload.patch .
 COPY simple_batch_upload_for_1_35.patch .
